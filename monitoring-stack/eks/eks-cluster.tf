@@ -179,7 +179,7 @@ resource "aws_kms_key" "eks" {
   description             = "KMS key for EKS cluster encryption"
   deletion_window_in_days = 7
 
-  tags = var.common_tags 
+  tags = var.common_tags
 }
 
 resource "aws_kms_alias" "eks" {
