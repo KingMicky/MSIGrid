@@ -196,7 +196,7 @@ resource "aws_cloudwatch_log_group" "cluster" {
 
 resource "aws_key_pair" "eks_nodes" {
   key_name   = "${var.cluster_name}-nodes"
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = file("${path.module}/eks_nodes.pub")
 
   tags = var.common_tags
 }
