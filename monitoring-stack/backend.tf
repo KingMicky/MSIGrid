@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "your-terraform-state-bucket"
+    bucket         = "Jo-bucket"
     key            = "monitoring-stack/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
